@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice - E-Secretary</title>
+    <link rel="stylesheet" href="notice_sty.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="profile-header">
+                <button class="logout"><a href="index.html">log out</a></button>
+                <a href="profil.html"><img src="p.png" alt="Profile Icon" class="small-profile-icon"></a>
+            </div>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li ><a href="profil.html">Profile</a></li>
+                <li><a href="Tasks.html">Add-List</a></li>
+                <li><a href="history.html">History</a></li>
+                <li class="active"><a href="notice.html">Notice</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="notice-content">
+                <h2>Manager's Contact Information</h2>
+                <div class="contact-container">
+                    <div class="department">
+                        <h3>Financial Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Ahmed BEN ALI</td></tr>
+                                <tr><td>Phone:</td><td>06 14 22 36 77</td></tr>
+                                <tr><td>Address:</td><td>105 Tilila, AGADIR</td></tr>
+                                <tr><td>Email:</td><td>ahmedbenali@gmail.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:ahmedbenali@gmail.com">Send Email</a></button>
+                        </div>
+                    </div>
+                    
+                    <div class="department">
+                        <h3>Communication Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Najat BENCHIKH</td></tr>
+                                <tr><td>Phone:</td><td>06 14 22 36 77</td></tr>
+                                <tr><td>Address:</td><td>105 Tilila, AGADIR</td></tr>
+                                <tr><td>Email:</td><td>najatbenchikh@gmail.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:najatbenchikh@gmail.com">Send Email</a></button>
+                        </div>
+                    </div>
+                    
+                    <div class="department">
+                        <h3>Administrative Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Amine AIT OUADDIR</td></tr>
+                                <tr><td>Phone:</td><td>06 14 22 36 77</td></tr>
+                                <tr><td>Address:</td><td>105 Tilila, AGADIR</td></tr>
+                                <tr><td>Email:</td><td>amineaitouaddir@gmail.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:amineaitouaddir@gmail.com">Send Email</a></button>
+                        </div>
+                    </div>
+                    <div class="department">
+                        <h3>IT Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Leila KHALIL</td></tr>
+                                <tr><td>Phone:</td><td>05 62 34 89 01</td></tr>
+                                <tr><td>Address:</td><td>23 Bd Zerktouni, SAFI</td></tr>
+                                <tr><td>Email:</td><td>leila.khalil@itservice.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:leila.khalil@itservice.com">Send Email</a></button>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                    <div class="department">
+                        <h3>HR Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Hassan AMANI</td></tr>
+                                <tr><td>Phone:</td><td>06 14 22 36 77</td></tr>
+                                <tr><td>Address:</td><td>105 Tilila, AGADIR</td></tr>
+                                <tr><td>Email:</td><td>hassanamani@gmail.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:hassanamani@gmail.com">Send Email</a></button>
+                        </div>
+                    </div>
+                    
+                    <div class="department">
+                        <h3>Marketing Department</h3>
+                        <button class="toggle-btn">Show Details</button>
+                        <div class="details" style="display: none;">
+                            <table>
+                                <tr><td>Manager:</td><td>Jamal ELHADDAOUI</td></tr>
+                                <tr><td>Phone:</td><td>06 14 22 36 77</td></tr>
+                                <tr><td>Address:</td><td>105 Tilila, AGADIR</td></tr>
+                                <tr><td>Email:</td><td>jamalelhaddaoui@gmail.com</td></tr>
+                            </table>
+                            <button class="email-btn"><a href="mailto:jamalelhaddaoui@gmail.com">Send Email</a></button>
+                        </div>
+                    </div>
+                </div>   
+            </section>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButtons = document.querySelectorAll('.toggle-btn');
+    
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const details = this.nextElementSibling; // Récupère l'élément suivant (div.details)
+                    if (details.style.display === "none" || !details.style.display) {
+                        details.style.display = "block";
+                        this.textContent = "Hide Details";
+                    } else {
+                        details.style.display = "none";
+                        this.textContent = "Show Details";
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

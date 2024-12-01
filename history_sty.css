@@ -1,0 +1,168 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: url('4.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+#logo{
+    width: 150px;
+    height: 35px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main";
+    grid-template-columns: 200px 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color:#100644;
+    color: #fff;
+    padding: 1em; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px; 
+    backdrop-filter: blur(5px); 
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0; 
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.small-profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logout {
+    background-color: #ffbf00;
+    color: #000;
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    padding: 0.5em 1em; 
+    font-size: 1em; 
+    font-weight: bold; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: auto;
+    height: auto;
+}
+
+.logout:hover {
+    background-color: #ffe066; 
+}
+
+
+aside {
+    grid-area: aside;
+    background-color: rgba(227, 224, 231, 0.8);
+    padding-top: 1em;
+    height: 100%; }
+
+aside ul {
+    list-style:none; 
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 1em 0; 
+}
+
+aside ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 1.2em; 
+    display: block;
+    padding: 0.5em 1em; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+aside ul li.active a,
+aside ul li a:hover {
+    background-color: white; 
+    border-radius: 8px; 
+    color: #000; 
+}
+
+
+main {
+    grid-area: main;
+    padding: 2em;
+    background-color: rgba(239, 239, 244, 0.9);
+}
+
+.history-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h2 {
+    color: rgba(48, 10, 85, 0.9);
+    margin-bottom: 1em;
+}
+
+.date-picker {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+}
+
+.date-picker input[type="date"] {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: rgba(48, 10, 85, 0.9);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: rgba(242, 242, 255, 0.8);
+    transition: background-color 0.3s;
+}
+a{
+    text-decoration: none;
+    color: #100644;
+}

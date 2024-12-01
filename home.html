@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Secretary Tasks List</title>
+    <link rel="stylesheet" href="home_sty.css">
+</head>
+<body>
+    <script src='./home.js'></script>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="profile-header">
+                
+                <button class="logout"><a href="index.html">log out</a></button>
+                <a href="profil.html"><img src="p.png" alt="Profile Icon" class="small-profile-icon"></a>
+            </div>
+        </header>
+        <aside>
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li>
+                <li ><a href="profil.html">Profile</a></li>
+                <li><a href="Tasks.html">Add-Tasks</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notice.html">Notice</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="tasks-left">
+                <h2>My Tasks List</h2>
+                <table id="myTaskTable">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Time</th>
+                            <th>Finish</th>
+                            <th>Delete</th>
+                            <th colspan="2">Description</th>
+                            <th>File</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tache1">
+                            <td class="taskName">Organize the weekly staff meeting</td>
+                            <td>08:30 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(1)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(1)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td><span class="urgent" ></span></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        <tr id="tache2">
+                            <td class="taskName">Prepare monthly report</td>
+                            <td>10:05 PM</td>
+                            <td><input type="checkbox"  class="checkbox" onclick="tacheFinished(2)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(2)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td><span class="urgent">Urgent!</span></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        <tr id="tache3">
+                            <td class="taskName">Team presentation</td>
+                            <td>11:00 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(3)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(3)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        <tr id="tache4">
+                            <td class="taskName">Review the quarterly budget</td>
+                            <td>01:00 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(4)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(4)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td><span class="urgent">Urgent!</span></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        <tr id="tache5">
+                            <td class="taskName">Prepare team training materials</td>
+                            <td>02:30 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(5)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(5)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td><span class="urgent"></span></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        <tr id="tache6">
+                            <td class="taskName">Client meeting for project update</td>
+                            <td>03:45 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(6)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(6)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                    
+                        <tr id="tache7">
+                            <td class="taskName">Schedule meeting with HR department</td>
+                            <td>04:00 PM</td>
+                            <td><input type="checkbox" class="checkbox" onclick="tacheFinished(7)"></td>
+                            <td><button class="delete-btn" onclick="removeTask(7)">Delete</button></td>
+                            <td><span class="finished">Finished</span></td>
+                            <td></td>
+                            <td><button class="open-btn">Open</button></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <button class="add-task"><a href="Tasks.html">Add a Task +</a></button>
+            </section>
+            
+            <section class="tasks-right">
+                <h2>Urgent!</h2>
+                <div class="urgent-item" onmouseover="taskDetected(4)" onmouseout="removeDetecteTask(4)">
+                    <a href="#tache1">Review the quarterly budget</a>
+                </div>
+                <div class="urgent-item" onmouseover="taskDetected(2)" onmouseout="removeDetecteTask(2)">
+                    <a href="#tache2">Prepare monthly report</a>
+                </div>
+            </section>
+       </main>
+    </div>
+</body>
+</html>

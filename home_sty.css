@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: url('4.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main";
+    grid-template-columns: 200px 1fr;
+    height: 100px;;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #100644;
+    color: #fff;
+    padding: 1em; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px; 
+    backdrop-filter: blur(5px); 
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0; 
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.small-profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logout {
+    background-color: #ffbf00;
+    color: #000;
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    padding: 0.5em 1em; 
+    font-size: 1em; 
+    font-weight: bold; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: auto;
+    height: auto;
+}
+
+.logout:hover {
+    background-color: #ffe066; 
+}
+
+
+aside {
+    grid-area: aside;
+    background-color: rgba(227, 224, 231, 0.8);
+    padding-top: 1em;
+    height: 100%; }
+
+aside ul {
+    list-style:none; 
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 1em 0; 
+}
+
+aside ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 1.2em; 
+    display: block;
+    padding: 0.5em 1em; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+aside ul li.active a,
+aside ul li a:hover {
+    background-color: white; 
+    border-radius: 8px; 
+    color: #000; 
+}
+
+
+main {
+    grid-area: main;
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+    background-color: rgba(239, 239, 244, 0.9);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: rgba(48, 10, 85, 0.9);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: rgba(242, 242, 255, 0.8);
+    transition: background-color 0.3s;
+}
+
+table .finished {
+    color: green;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+table .urgent {
+    color: red;
+    font-weight: bold;
+}
+
+table .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table .delete-btn:hover {
+    background-color: #cc0000;
+}
+
+table .open-btn {
+    background-color: #2c73d2;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table .open-btn:hover {
+    background-color: #174d99;
+}
+
+
+.tasks-right {
+    width: 25%;
+    background-color: rgba(255, 240, 240, 0.9);
+    border-left: 6px solid #ff0000;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-right h2 {
+    color: #ff0000;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.urgent-item {
+    background-color: #ffe6e6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.urgent-item a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.urgent-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.urgent-item:hover {
+    background-color: #ffcccc;
+    transition: background-color 0.3s;
+}
+a{
+    text-decoration: none;
+    color: #100644;
+}
+#logo{
+    width: 150px;
+    height: 35px;
+}
+
+.changeTaskStyle{
+    font-size: 14px;
+    width: 150px;
+    height: 100px;
+    border: 3px solid red;
+    border-radius: 20px;
+}

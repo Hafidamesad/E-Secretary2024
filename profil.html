@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Secretary Profile</title>
+    <link rel="stylesheet" href="profil_sty.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="profile-header">
+                <button class="logout"><a href="index.html">log out</a></button>
+                <a href="profil.html"><img src="p.png" alt="Profile Icon" class="small-profile-icon"></a>
+            </div>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="">Profile</a></li>
+                <li><a href="Tasks.html">Add-List</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notice.html">Notice</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="profile-left">
+                <div class="profile-image">
+                    <img src="pp.png" alt="Profile Icon" id="profileImage" style="cursor: pointer;">
+                    <input type="file" id="fileInput" style="display: none;">
+                </div><br>
+                <h2>
+                    <span id="companyName">Company's name</span>
+                    <input type="text" id="companyNameInput" style="display: none;" placeholder="Company's name">
+                </h2><br>
+                <p id="description">Description......</p>
+                <textarea id="descriptionInput" style="display: none;" placeholder="Description......"></textarea><br>
+                <button class="edit-profile" id="editProfile">Edit</button><br><br>
+            </section>
+            <section class="profile-right">
+                <form id="profileForm">
+                    <div class="info-item">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="companyname@email.com" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" placeholder="+212 5 XX XX XX XX" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label for="mobile">Mobile</label>
+                        <input type="text" id="mobile" placeholder="+212 6 XX XX XX XX" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Province Ville NR Maroc" readonly>
+                    </div>
+                    <div class="info-item">
+                        <label for="keyword">Keyword</label>
+                        <input type="password" id="keyword" placeholder="************" readonly>
+                    </div>
+                    <button type="button" class="edit-info" id="saveProfile" style="display: none;">Save</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

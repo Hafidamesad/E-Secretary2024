@@ -1,0 +1,97 @@
+body{
+    background-image: url(background1.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Nav-Bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.Content_Nav_Bar{
+    flex-direction: row;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 15px;
+    font-size: 15px;
+    margin-right: 200px;
+}
+.nav1{
+    
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.nav2{
+    background-color: rgba(255,176,0, 0.8);
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+#logo{
+    width: 150px;
+    height: 35px;
+}
+.infos{
+    margin-left: 30px;
+    margin-top: 60px;
+
+}
+.partInfos{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#nomSite{
+    color:rgb(255,176,0);
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+#trucImg{
+    margin-top: 60px;
+    width: 40px;
+    height: 50px;
+}
+#slogan{
+    margin-top: 0px;
+    color: white;
+}
+#getStartedBtn{
+    color: white;
+    margin-top: 20px;
+    padding: 0px 50px 0px 50px;
+    background-color: #8bd59e;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#getStartedBtn:hover{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+    margin-left: 8px;
+    margin-top: 150px;
+}
+.Content_footer{
+    width: 20px;
+    flex-direction: row;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 0px 5px 0px 5px;
+}
+.footer-links a {
+    text-decoration: underline;
+}

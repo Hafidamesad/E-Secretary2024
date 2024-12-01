@@ -1,0 +1,15 @@
+Ach ba9i lyaa :
+___________________________________________
+>>index.html
+3.Les couleurs rgb : bleu :#100644 (16;6;68)/ orange :#ffb000 (255,176,0)/ gray / green :#8bd59e/ green 2 : #1b9476
+5.Lien hypertexte
+6.Lien social media
+13.L3in dyl password
+
+>>JS:
+1.La page Home : fach nclicker 3la delete temseh task mn l9a2ima
+3.Fach ithet cursor 3la chihaja f urgent Tweli kbira
+4.Fach deghty 3la teswira itle3 profile
+5.fach tzidi tcrer chi task tzad f la liste
+6.fach tcocher urgent tzad f liste urgent
+7. fach tcréer liste tzad

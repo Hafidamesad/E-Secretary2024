@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Secretary - History</title>
+    <link rel="stylesheet" href="history_sty.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="profile-header">
+                <button class="logout"><a href="index.html">log out</a></button>
+                <a href="profil.html"><img src="p.png" alt="Profile Icon" class="small-profile-icon"></a>
+            </div>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profil.html">Profile</a></li>
+                <li><a href="Tasks.html">Add-Tasks</a></li>
+                <li class="active"><a href="history.html">History</a></li>
+                <li><a href="notice.html">Notice</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="history-section">
+                <h2>History</h2>
+                <div class="date-picker">
+                    <label for="date">Choose date:</label>
+                    <input type="date" id="date">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="task-table-body">
+                        <tr class="task-row" data-date="2024-11-29">
+                            <td>Organize the weekly staff meeting</td>
+                            <td>2024-11-29</td>
+                            <td>10:35 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-11-29">
+                            <td>Archive administrative documents</td>
+                            <td>2024-11-29</td>
+                            <td>12:00 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-11-30">
+                            <td>Archive administrative documents</td>
+                            <td>2024-11-30</td>
+                            <td>03:15 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-01">
+                            <td>Follow up on supplier payments</td>
+                            <td>2024-12-01</td>
+                            <td>05:00 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-02">
+                            <td>Review and approve staff leave requests</td>
+                            <td>2024-12-02</td>
+                            <td>06:30 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-03">
+                            <td>Prepare the presentation for the annual meeting</td>
+                            <td>2024-12-03</td>
+                            <td>09:00 AM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-04">
+                            <td>Send reminders to project team members</td>
+                            <td>2024-12-04</td>
+                            <td>01:45 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-05">
+                            <td>Update the client on project progress</td>
+                            <td>2024-12-05</td>
+                            <td>04:20 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-06">
+                            <td>Plan the team-building event</td>
+                            <td>2024-12-06</td>
+                            <td>10:00 AM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-07">
+                            <td>Conduct performance reviews for staff</td>
+                            <td>2024-12-07</td>
+                            <td>11:30 AM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-08">
+                            <td>Update the website with new content</td>
+                            <td>2024-12-08</td>
+                            <td>02:00 PM</td>
+                        </tr>
+                        <tr class="task-row" data-date="2024-12-09">
+                            <td>Check inventory for office supplies</td>
+                            <td>2024-12-09</td>
+                            <td>03:30 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const dateInput = document.getElementById("date");
+        const taskRows = document.querySelectorAll(".task-row");
+
+        dateInput.addEventListener("change", function() {
+            const selectedDate = dateInput.value;
+
+            taskRows.forEach(row => {
+                const rowDate = row.getAttribute("data-date");
+                if (selectedDate === rowDate || selectedDate === "") {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

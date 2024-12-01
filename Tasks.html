@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task - E-Secretary</title>
+    <link rel="stylesheet" href="Tasks_sty.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="" id="logo">
+            <div class="profile-header">
+                <button class="logout"><a href="index.html">log out</a></button>
+                <a href="profil.html"><img src="p.png" alt="Profile Icon" class="small-profile-icon"></a>
+            </div>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profil.html">Profile</a></li>
+                <li  class="active"><a href="Tasks.html">Add-Tasks</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="notice.html">Notice</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="add-task-section">
+                <h2>Add New Task</h2>
+                <form class="add-task-form" id="taskForm">
+                    <div class="input-group">
+                        <label for="task-name">Task Name :</label>
+                        <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="task-description">Description :</label>
+                        <textarea id="task-description" name="task-description" placeholder="Provide a description" rows="4"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="task-time">Time :</label>
+                        <input type="time" id="task-time" name="task-time" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="task-list">Select Task List :</label>
+                        <select id="task-list" name="task-list">
+                            <option value="Work">Work</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Urgent">Urgent</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="list-task">Create New List :</label>
+                        <input type="text" id="list-task" name="list-task">
+                    </div>
+                    <div class="input-group">
+                        <label for="task-date">Due Date :</label>
+                        <input type="date" id="task-date" name="task-date" >
+                    </div>
+                    <input type="file" id="file-input" multiple> <!--multiple pour permettre à l'utilis de choisir plusieurs fichiers-->
+                    <button type="button" class="submit-btn"  id="upload-btn">Attach File</button>
+                    <script src="Tasks.js">
+                        
+                      </script>
+                    <button type="submit" class="submit-btn">Add Task</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
