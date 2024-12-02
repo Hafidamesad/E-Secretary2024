@@ -49,17 +49,34 @@ body{
     width: 150px;
     height: 35px;
 }
-.formInscription{
-    margin-right: 300px;
-    margin-left: 300px;
-    margin-top: 100px;
-    border: 5px solid rgba(255, 255, 255, 0.3);
+.formInscription {
+    margin: 10px auto;  /* Centre le formulaire horizontalement */
+    border: 5px solid rgba(255, 255, 255, 0.3);  /* Bordure semi-transparente */
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 80%;  /* Réduit la largeur à 80% de l'écran */
+    max-width: 400px;  /* Limite la largeur à 400px */
+    padding: 20px;  /* Ajoute de l'espace interne */
+    box-sizing: border-box;  /* Inclut les bordures et le padding dans la largeur totale */
 }
-table{
+
+table {
     color: white;
+    width: 100%;  /* La table occupe toute la largeur disponible */
 }
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+    .formInscription {
+        width: 90%;  /* Réduit la largeur à 90% de l'écran sur les petits écrans */
+        padding: 15px;  /* Réduit l'espace interne sur les petits écrans */
+    }
+    
+    table {
+        width: 100%;  /* Garantit que la table reste responsive */
+    }
+}
+
 #singUpTitle{
     font-size: 20px;
     color: #1b9476;
