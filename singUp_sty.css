@@ -54,8 +54,8 @@ body{
     border: 5px solid rgba(255, 255, 255, 0.3);  /* Bordure semi-transparente */
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 80%;  /* Réduit la largeur à 80% de l'écran */
-    max-width: 700px;  /* Limite la largeur à 400px */
+    width: 90%;  /* Réduit la largeur à 80% de l'écran */
+    max-width: 800px;  /* Limite la largeur à 400px */
     padding: 20px;  /* Ajoute de l'espace interne */
     box-sizing: border-box;  /* Inclut les bordures et le padding dans la largeur totale */
 }
