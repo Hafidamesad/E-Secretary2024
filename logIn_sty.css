@@ -55,16 +55,29 @@ body{
     border: 5px solid rgb(255,176,0);
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;  /* Occupe toute la largeur disponible */
-    max-width: 350px;  /* Limite la largeur à 350px, ou ajustez selon vos besoins */
-    padding: 20px;  /* Ajoute un peu d'espace interne */
-    box-sizing: border-box;  /* Inclut les bordures et padding dans la largeur totale */
+    width: 80%;  /* Réduit la largeur à 80% de l'écran */
+    max-width: 400px;  /* Limite la largeur à 400px */
+    padding: 15px;  /* Réduit l'espace interne pour éviter que le formulaire soit trop grand */
+    box-sizing: border-box;  /* Inclut les bordures et le padding dans la largeur totale */
 }
 
 table {
     color: white;
-    width: 100%;  /* S'assure que la table occupe toute la largeur disponible */
+    width: 100%;  /* La table occupe toute la largeur disponible */
 }
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+    .formconnexion {
+        width: 90%;  /* Réduit la largeur à 90% de l'écran sur les petits écrans */
+        padding: 10px;  /* Réduit l'espace interne sur les petits écrans */
+    }
+    
+    table {
+        width: 100%;  /* Garantit que la table reste responsive */
+    }
+}
+
 
 
 #legend {
