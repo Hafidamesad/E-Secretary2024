@@ -50,6 +50,7 @@ body{
     height: 35px;
 }
 /* Applique box-sizing globalement */
+/* Applique box-sizing globalement */
 * {
     box-sizing: border-box;  /* Cela inclut padding et bordure dans la largeur totale de l'élément */
 }
@@ -76,6 +77,7 @@ input, select, textarea {
     margin: 10px 0;  /* Marge entre les champs */
     border: 1px solid #ccc;  /* Bordure des champs */
     border-radius: 5px;  /* Bordure arrondie pour les champs */
+    max-width: 100%;  /* Empêche les champs de dépasser le conteneur */
 }
 
 /* Media Query pour les petits écrans */
@@ -83,6 +85,10 @@ input, select, textarea {
     .formInscription {
         width: 90%;  /* Réduit la largeur à 90% de l'écran sur les petits écrans */
         padding: 15px;  /* Réduit l'espace interne sur les petits écrans */
+    }
+    
+    table {
+        width: 100%;  /* Garantit que la table reste responsive */
     }
 }
 
