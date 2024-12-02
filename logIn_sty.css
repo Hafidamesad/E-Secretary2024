@@ -55,15 +55,17 @@ body{
     border: 5px solid rgb(255,176,0);
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 90%;  /* Limite la largeur à 90% de l'écran */
-    width: 350px ;  /* Largeur par défaut, mais peut se réduire */
+    width: 100%;  /* Occupe toute la largeur disponible */
+    max-width: 350px;  /* Limite la largeur à 350px, ou ajustez selon vos besoins */
     padding: 20px;  /* Ajoute un peu d'espace interne */
+    box-sizing: border-box;  /* Inclut les bordures et padding dans la largeur totale */
 }
 
 table {
     color: white;
     width: 100%;  /* S'assure que la table occupe toute la largeur disponible */
 }
+
 
 #legend {
     font-family: Arial, Helvetica, sans-serif;
