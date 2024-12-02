@@ -1,4 +1,17 @@
 
+-webkit-transform: rotate(45deg); /* Chrome, Safari */
+-moz-transform: rotate(45deg);    /* Firefox */
+-ms-transform: rotate(45deg);     /* Edge Legacy */
+transform: rotate(45deg);         /* Standard */
+display: -ms-flexbox; /* Pour IE */
+display: flex; /* Par défaut */ 
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +35,7 @@ body {
         "header header"
         "aside main";
     grid-template-columns: 200px 1fr;
-    height: 100px;;
+    height: 100px;
 }
 
 
